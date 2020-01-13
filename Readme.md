@@ -6,7 +6,7 @@ Computer Graphics (COM-391)
 General course information, time, room and lab numbers, rules, grading, and
 books
 
-* <https://github.com/auca/com.391/tree/master/Syllabus>
+* <https://github.com/auca/com.391/blob/master/Syllabus/AUCA_COM-391_Fall_2020_Syllabus.pdf>
 
 ## Class Discussions
 
