@@ -33,12 +33,6 @@ View previous class recordings
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6edGtFVaKBq9D0C_fi5-kMP>
 
-## Registration
-
-Contacts, piazza & server data, attendance
-
-* <https://docs.google.com/spreadsheets/d/1QxzVXsAxngUDDygeLbPkf_CWecNGl4YBnegjmy91GGg>
-
 ## Practice Midterm Signup
 
 * <https://docs.google.com/spreadsheets/d/14s0rDLvHA-Yjl-WoZKHWutC7f2ShkfAX7bSHnZqj81g>
