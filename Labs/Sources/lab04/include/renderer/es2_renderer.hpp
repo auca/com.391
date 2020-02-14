@@ -61,8 +61,8 @@ namespace aur {
                     auto material = mesh->get_material();
 
                     glm::mat4 mvp_matrix = camera.get_view_projection_matrix() * object->get_world_matrix();
-                    material->update(mvp_matrix);
                     material->use();
+                    material->update(mvp_matrix);
                     geometry->bind();
 
                     glLineWidth(geometry->get_line_width());
