@@ -27,5 +27,5 @@ add_executable(aur
     include/utilities/utilities.hpp
     include/aur.hpp
     main.cpp
-        )
+)
 target_link_libraries(aur ${CONAN_LIBS})
