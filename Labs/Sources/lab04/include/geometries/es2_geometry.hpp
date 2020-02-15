@@ -24,7 +24,7 @@ namespace aur {
 #ifdef __APPLE__
             glGenVertexArraysAPPLE(1, &vertex_array_object);
             glBindVertexArrayAPPLE(vertex_array_object);
-#elif
+#else
             glGenVertexArrays(1, &vertex_array_object);
             glBindVertexArray(vertex_array_object);
 #endif
@@ -55,7 +55,7 @@ namespace aur {
             );
 #ifdef __APPLE__
             glBindVertexArrayAPPLE(0);
-#elif
+#else
             glBindVertexArray(0);
 #endif
             glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -66,7 +66,7 @@ namespace aur {
         void bind() final {
 #ifdef __APPLE__
             glBindVertexArrayAPPLE(_vertex_array_object);
-#elif
+#else
             glBindVertexArray(_vertex_array_object);
 #endif
         }
