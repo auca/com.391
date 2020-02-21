@@ -3,7 +3,7 @@
 uniform sampler2D texture_sampler;
 
 varying vec4 fragment_color;
-varying vec4 fragment_normal;
+varying vec3 fragment_normal;
 varying vec2 fragment_texture_coordinates;
 
 void main()
