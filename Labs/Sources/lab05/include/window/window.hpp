@@ -1,6 +1,7 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
+#include <functional>
 #include <string>
 #include <utility>
 
