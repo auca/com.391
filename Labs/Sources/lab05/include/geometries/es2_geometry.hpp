@@ -53,41 +53,42 @@ namespace aur {
             glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, index_buffer_object);
 
             int position_attribute_location{material.get_shader()->get_attributes().at("position")};
-            if (position_attribute_location == -1) { return; }
-
-            GLsizei stride{sizeof(GLfloat) * 14};
-            glEnableVertexAttribArray(position_attribute_location);
-            glVertexAttribPointer(
-                position_attribute_location,
-                3, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) 0
-            );
-
             int color_attribute_location{material.get_shader()->get_attributes().at("color")};
-            if (color_attribute_location == -1) { return; }
-
-            glEnableVertexAttribArray(color_attribute_location);
-            glVertexAttribPointer(
-                color_attribute_location,
-                4, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) (sizeof(GLfloat) * 3)
-            );
-
             int normal_attribute_location{material.get_shader()->get_attributes().at("normal")};
-            if (normal_attribute_location == -1) { return; }
-
-            glEnableVertexAttribArray(normal_attribute_location);
-            glVertexAttribPointer(
-                normal_attribute_location,
-                3, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) (sizeof(GLfloat) * 7)
-            );
-
             int texture_coordinates_attribute_location{material.get_shader()->get_attributes().at("texture_coordinates")};
-            if (texture_coordinates_attribute_location == -1) { return; }
 
-            glEnableVertexAttribArray(texture_coordinates_attribute_location);
-            glVertexAttribPointer(
-                texture_coordinates_attribute_location,
-                4, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) (sizeof(GLfloat) * 10)
-            );
+            GLsizei stride = sizeof(GLfloat) * 14;
+            if (position_attribute_location != -1) {
+                glEnableVertexAttribArray(position_attribute_location);
+                glVertexAttribPointer(
+                    position_attribute_location,
+                    3, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) 0
+                );
+            }
+
+            if (color_attribute_location != -1) {
+                glEnableVertexAttribArray(color_attribute_location);
+                glVertexAttribPointer(
+                    color_attribute_location,
+                    4, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) (sizeof(GLfloat) * 3)
+                );
+            }
+
+            if (normal_attribute_location != -1) {
+                glEnableVertexAttribArray(normal_attribute_location);
+                glVertexAttribPointer(
+                    normal_attribute_location,
+                    3, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) (sizeof(GLfloat) * 7)
+                );
+            }
+
+            if (texture_coordinates_attribute_location != -1) {
+                glEnableVertexAttribArray(texture_coordinates_attribute_location);
+                glVertexAttribPointer(
+                    texture_coordinates_attribute_location,
+                    4, GL_FLOAT, GL_FALSE, stride, (const GLvoid *) (sizeof(GLfloat) * 10)
+                );
+            }
 #ifdef __APPLE__
             glBindVertexArrayAPPLE(0);
 #else
