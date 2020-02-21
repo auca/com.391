@@ -1,0 +1,9 @@
+[requires]
+sdl2/2.0.10@bincrafters/stable
+glew/2.1.0@bincrafters/stable
+glm/0.9.9.5@g-truc/stable
+imgui/1.75
+
+[generators]
+cmake
+
