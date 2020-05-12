@@ -101,7 +101,7 @@ Be able to compile and answer questions about material properties (depth testing
 
 8. Normal Maps (Bump Mapping) Test
 
-Add normal map support to the engine.
+Add normal map support to the engine. Ensure that the lights are moving or can be moved.
 
 9. General Usage Test (Final Project)
 
