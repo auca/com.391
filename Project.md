@@ -105,10 +105,10 @@ Add normal map support to the engine.
 
 9. General Usage Test (Final Project)
 
-1. Create one level (at least one rectangular room with textured ground and walls).
-2. Add at least one enemy type (the enemy should be a plane with texture-based sprite animation, enemies can move).
-3. Add the first-person player (the player should be the camera and an overlay mesh with texture-based sprite animation).
-4. Add the basic game logic (shooting, destroying enemies with ray intersection testing).
+* Create one level (at least one rectangular room with textured ground and walls).
+* Add at least one enemy type (the enemy should be a plane with texture-based sprite animation, enemies can move).
+* Add the first-person player (the player should be the camera and an overlay mesh with texture-based sprite animation).
+* Add the basic game logic (shooting, destroying enemies with ray intersection testing).
 
 ## Modifying the Build System
 
