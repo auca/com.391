@@ -91,6 +91,25 @@ engine.
 
 ![Lighting Test](https://i.imgur.com/FKl3ZAS.png)
 
+6. Textured Plane Test
+
+Be able to compile and answer questions about textures.
+
+7. Material Properties Test
+
+Be able to compile and answer questions about material properties (depth testing, culling, blending, fog).
+
+8. Normal Maps (Bump Mapping) Test
+
+Add normal map support to the engine.
+
+9. General Usage Test (Final Project)
+
+1. Create one level (at least one rectangular room with textured ground and walls).
+2. Add at least one enemy type (the enemy should be a plane with texture-based sprite animation, enemies can move).
+3. Add the first-person player (the player should be the camera and an overlay mesh with texture-based sprite animation).
+4. Add the basic game logic (shooting, destroying enemies with ray intersection testing).
+
 ## Modifying the Build System
 
 For all your tests you need to add the following lines to the build script:
