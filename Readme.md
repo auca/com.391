@@ -43,9 +43,8 @@ View previous class recordings
 
 ## Practice Final Signup
 
-* <https://docs.google.com/spreadsheets/d/1yxxZfIENsLKEfn0shSkZb6I3__GBsDdBBhfFQqsO058>
+* <https://docs.google.com/spreadsheets/d/10Xjd3xmqhAYGCeTkjE9V5aC3eMFclK0yVTkkPS082IM>
 
 ## Practice Final Task List
 
 * <https://docs.google.com/spreadsheets/d/1sDEboN3vHN_lIXBfohvFMiCdVZkUoE9tyz0jn4-M9Tg>
-
