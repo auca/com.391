@@ -10,7 +10,7 @@ graphics.
 The task of the course project is to develop many test applications to
 demonstrate the correctness of the engine's implementation.
 
-### Task 1
+### Task 1 (Engine Version 1.0)
 
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
