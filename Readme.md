@@ -13,9 +13,19 @@ View previous class recordings
 
 ### Lectures
 
+#### Monday 10:50
+
 * <https://youtube.com/playlist?list=PLHcEzCb_lW6cxqT7zqtrA03omZJ8621Me>
 
-...
+### Practice
+
+#### Wednesday 10:50
+
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6eqOI0m56BUNm9p_MhgSxYE>
+
+#### Wednesday 12:45
+
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6doM3UnGkt3aM-QrniYhsqY>
 
 ## Exams
 
