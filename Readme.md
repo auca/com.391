@@ -26,21 +26,3 @@ View previous class recordings
 #### Wednesday 12:45
 
 * <https://youtube.com/playlist?list=PLHcEzCb_lW6doM3UnGkt3aM-QrniYhsqY>
-
-## Exams
-
-### Practice Midterm Signup
-
-* TBD
-
-### Practice Midterm Task List
-
-* TBD
-
-### Practice Final Signup
-
-* TBD
-
-### Practice Final Task List
-
-* TBD
