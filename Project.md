@@ -61,8 +61,8 @@ have one). Submit the commit ID to Canvas before the deadline.
 
 The test programs should generate similar output.
 
-* [Circle](https://i.imgur.com/ZtrDWLw.png)
-* [Rectangle](https://i.imgur.com/QxvTpCF.png)
+* [circle_test.cpp](https://i.imgur.com/dzSIxbu.png)
+* [rectangle_test.cpp](https://i.imgur.com/91NnNoO.png)
 
 ## Resources
 
