@@ -15,14 +15,14 @@ demonstrate the correctness of the engine's implementation.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/bd6ac0455700f285ea0aeccbe7c0f9ca2c816002>
+* <https://github.com/toksaitov/asr-project/tree/48ed4628a758fb6fdd3998d2a5b4dbad37606849>
 
 Note that you need to point to a specific commit to get Version 1.0 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout bd6ac0455700f285ea0aeccbe7c0f9ca2c816002
+git checkout 48ed4628a758fb6fdd3998d2a5b4dbad37606849
 ```
 
 ### Task 2 (Engine Version 1.0)
