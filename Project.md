@@ -27,9 +27,6 @@ git checkout bd6ac0455700f285ea0aeccbe7c0f9ca2c816002
 
 ### Task 2 (Engine Version 1.0)
 
-![Circle](https://i.imgur.com/ZtrDWLw.png)
-![Rectangle](https://i.imgur.com/QxvTpCF.png)
-
 Use the first version of the engine from the previous task and add `circle_test.cpp` and
 `rectangle_test.cpp` test files to the tests directory. Change the `CMakeLists.txt` build
 config to accommodate the new tests. You can copy the `triangle_test.cpp` code into the files
@@ -59,6 +56,13 @@ packed into a vector (don't forget to include its header). Allow parameters such
 width, height, and segment count to influence the number of triangles generated to represent
 the figure. Commit, push to the private repository (get it from the instructor if you don't
 have one). Submit the commit ID to Canvas before the deadline.
+
+#### Examples
+
+The test programs should generate similar output.
+
+* [Circle](https://i.imgur.com/ZtrDWLw.png)
+* [Rectangle](https://i.imgur.com/QxvTpCF.png)
 
 ## Resources
 
