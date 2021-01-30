@@ -54,10 +54,10 @@ std::vector<Vertex> generate_rectangle_geometry_data(
                     );
 ```
 
-Use them in the `main` function at an appropriate place to generate the geometry vertex data
-packed into a vector (don't forget to include its header). Allow parameters such as radius,
-width, height, and segment count to influence the number of triangles generated to represent
-the figure.
+Use them in the `main` function at an appropriate place to generate the geometry
+vertex data packed into a vector (don't forget to include its header). Allow
+parameters such as radius, width, height, and segment count to influence the
+number of triangles generated to represent the figure.
 
 For a circle
 
@@ -65,13 +65,18 @@ For a circle
 
 For a rectangle
 
-* `width_segments_count` is a number of segmented rectangular faces along the width of the rectangle.
-* `height_segments_count` is a number of segmented rectangular faces along the height of the rectangle.
+* `width_segments_count` is a number of segmented rectangular faces along the
+   width of the rectangle.
+
+* `height_segments_count` is a number of segmented rectangular faces along the
+   height of the rectangle.
 
 The vertices of the triangles MUST be specified in the counter-clockwise (CCW)
 order.
 
 ![CW vs CCW](https://www.khronos.org/opengl/wiki_opengl/images/Winding_order.png)
+
+#### Examples
 
 For 10 segments of a circle, the geometry must have the following vertices and
 triangles.
@@ -79,24 +84,18 @@ triangles.
 ![Mesh of a circle with 10 segments](https://i.imgur.com/iAnkr8w.png)
 ![Circle with 10 segments](https://i.imgur.com/a5DfMTn.png)
 
-For 5 and 5 width and hegith segments of a rectangle, the geometry must have the following vertices and triangles.
+For 5 and 5 width and height segments of a rectangle, the geometry must have the
+following vertices and triangles.
 
 ![Mesh of a rectangle with 5 and 5 width and height segments](https://i.imgur.com/Yfuu7vF.png)
 ![Rectangle with 5 and 5 width and height segments](https://i.imgur.com/YN8audT.png)
 
-Vertices and triangles are shown for demonstration purposes. You don't have
-to draw them, but you mesh must have the same vertices and triangles. You will
-not get points otherwise.
+The mesh on the left is shown for demonstration purposes only. You don't have
+to draw it. Nevertheless, ensure that your circle and rectangle geometries have
+the same vertices and triangles. You will get zero otherwise.
 
 Commit, push to the private repository (get it from the instructor if you don't
 have one). Submit the commit ID to Canvas before the deadline.
-
-#### Examples
-
-The test programs should generate similar output.
-
-* [circle_test.cpp](https://i.imgur.com/dzSIxbu.png)
-* [rectangle_test.cpp](https://i.imgur.com/91NnNoO.png)
 
 ## Resources
 
