@@ -27,8 +27,8 @@ git checkout 48ed4628a758fb6fdd3998d2a5b4dbad37606849
 
 ### Task 2 (Engine Version 1.0)
 
-![Circle with 100 segments](https://i.imgur.com/PUOqJhH.png)
-![Rectangle](https://i.imgur.com/YN8audT.png)
+![Circle with 100 segments](https://i.imgur.com/cWuwmBI.png)
+![Rectangle](https://i.imgur.com/XUcM9EG.png)
 
 Use the first version of the engine from the previous task and add
 `circle_test.cpp` and `rectangle_test.cpp` test files to the tests directory.
@@ -78,24 +78,26 @@ order.
 
 #### Examples
 
-For 10 segments of a circle, the geometry must have the following vertices and
+For ten segments of a circle, the geometry MUST have the following vertices and
 triangles.
 
-![Mesh of a circle with 10 segments](https://i.imgur.com/iAnkr8w.png)
-![Circle with 10 segments](https://i.imgur.com/a5DfMTn.png)
+![Circle with 10 segments](https://i.imgur.com/y0dIDuo.png)
+![Mesh of a circle with 10 segments](https://i.imgur.com/JHasEVd.png)
 
-For 5 and 5 width and height segments of a rectangle, the geometry must have the
+For five width and height segments of a rectangle, the geometry MUST have the
 following vertices and triangles.
 
-![Mesh of a rectangle with 5 and 5 width and height segments](https://i.imgur.com/Yfuu7vF.png)
-![Rectangle with 5 and 5 width and height segments](https://i.imgur.com/YN8audT.png)
+![Rectangle with 5 and 5 width and height segments](https://i.imgur.com/XUcM9EG.png)
+![Mesh of a rectangle with 5 and 5 width and height segments](https://i.imgur.com/mc2me62.png)
 
-The mesh on the left is shown for demonstration purposes only. You don't have
+The mesh on the right is shown for demonstration purposes only. You don't have
 to draw it. Nevertheless, ensure that your circle and rectangle geometries have
 the same vertices and triangles. You will get zero otherwise.
 
 Commit, push to the private repository (get it from the instructor if you don't
-have one). Submit the commit ID to Canvas before the deadline.
+have one). Upload ALL the engine sources, not only the modified files. Do not
+upload intemidiate and binary files. You grade will be lowered for that. Submit
+the last commit ID to Canvas before the deadline.
 
 ## Resources
 
