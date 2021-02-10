@@ -114,6 +114,20 @@ git clone https://github.com/toksaitov/asr-project.git
 git checkout 82fb7b0f8a74bbd8c76be9e9b947c242d0cfa1f9
 ```
 
+After updating the engine, do not forget to run
+
+```
+conan install ..
+```
+
+and
+
+```
+cmake ..
+```
+
+to download `glm` Math library and to regenerate the project files. 
+
 ### Task 4 (Engine Version 2.0)
 
 ![Sphere](https://i.imgur.com/eTUIFQE.png)
