@@ -99,6 +99,73 @@ have one). Upload ALL the engine sources, not only the modified files. Do not
 upload intemidiate and binary files. You grade will be lowered for that. Submit
 the last commit ID to Canvas before the deadline.
 
+### Task 3 (Engine Version 2.0)
+
+Ensure that your development environment is set correctly, and you can compile,
+run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/tree/82fb7b0f8a74bbd8c76be9e9b947c242d0cfa1f9>
+
+Note that you need to point to a specific commit to get Version 2.0 of the
+graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git
+git checkout 82fb7b0f8a74bbd8c76be9e9b947c242d0cfa1f9
+```
+
+### Task 4 (Engine Version 2.0)
+
+![Sphere](https://i.imgur.com/eTUIFQE.png)
+![Box](https://i.imgur.com/UBmVOt2.png)
+
+Use the second version of the engine from the previous task and add
+`sphere_test.cpp` and `box_test.cpp` test files to the tests directory.
+Change the `CMakeLists.txt` build config to accommodate the new tests.
+Create functions
+
+```cpp
+ std::pair<std::vector<asr::Vertex>, std::vector<unsigned int>>
+   generate_sphere_geometry_data(
+      float radius,
+      unsigned int width_segments_count,
+      unsigned int height_segments_count
+   );
+```
+
+and
+
+```cpp
+ std::pair<std::vector<asr::Vertex>, std::vector<unsigned int>>
+   generate_box_geometry_data(
+      float width,
+      float height,
+      float depth
+      unsigned int width_segments_count,
+      unsigned int height_segments_count,
+      unsigned int depth_segments_count
+   );
+```
+
+Use them in the `main` function at an appropriate place to generate the geometry
+vertex and index data packed into a vector (don't forget to include its header).
+Allow parameters such as radius, width, height segment count to influence the
+number of triangles generated to represent the figure. The vertices of the
+triangles MUST be specified in the counter-clockwise (CCW) order. You DO NOT
+need to draw edges and vertices.
+
+In both tests, add event handlers to allow control of the camera. The
+`WASD` keys must orient the camera (rotate to left/right, up/down). The arrow
+keys (`UP`, `DOWN`) must move the camera forward to the current orientation
+of the camera. You can use `set_es2_sdl_key_down_event_handler` or
+`set_es2_sdl_keys_down_event_handler` functions to setup keyboard event
+handling with SDL. Refer to SDL documentation to find the key code constants.
+
+Commit, push to the private repository (get it from the instructor if you don't
+have one). Upload ALL the engine sources, not only the modified files. Do not
+upload intemidiate and binary files. You grade will be lowered for that. Submit
+the last commit ID to Canvas before the deadline.
+
 ## Resources
 
 3D Math Primer for Graphics and Game Development, Second Edition by Fletcher
