@@ -12,6 +12,8 @@ demonstrate the correctness of the engine's implementation.
 
 ### Task 1 (Engine Version 1.0)
 
+![Triangle](https://i.imgur.com/fOPt4OE.png)
+
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
@@ -126,7 +128,7 @@ and
 cmake ..
 ```
 
-to download `glm` Math library and to regenerate the project files. 
+to download `glm` Math library and to regenerate the project files.
 
 ### Task 4 (Engine Version 2.0)
 
@@ -134,8 +136,9 @@ to download `glm` Math library and to regenerate the project files.
 ![Box](https://i.imgur.com/UBmVOt2.png)
 
 Use the second version of the engine from the previous task and add
-`sphere_test.cpp` and `box_test.cpp` test files to the tests directory.
-Change the `CMakeLists.txt` build config to accommodate the new tests.
+`sphere_test.cpp` and `box_test.cpp` files to the tests directory.  Change the
+`CMakeLists.txt` build configuration to accommodate the new tests.
+
 Create functions
 
 ```cpp
@@ -168,12 +171,69 @@ number of triangles generated to represent the figure. The vertices of the
 triangles MUST be specified in the counter-clockwise (CCW) order. You DO NOT
 need to draw edges and vertices.
 
-In both tests, add event handlers to allow control of the camera. The
-`WASD` keys must orient the camera (rotate to left/right, up/down). The arrow
-keys (`UP`, `DOWN`) must move the camera forward to the current orientation
-of the camera. You can use `set_es2_sdl_key_down_event_handler` or
-`set_es2_sdl_keys_down_event_handler` functions to setup keyboard event
-handling with SDL. Refer to SDL documentation to find the key code constants.
+In both tests, add event handlers to allow control of the camera. The `WASD`
+keys must orient the camera (rotate to left/right, up/down). The arrow keys
+(`UP`, `DOWN`) must move the camera forward to the current orientation of the
+camera. You can use `set_es2_sdl_key_down_event_handler` or
+`set_es2_sdl_keys_down_event_handler` functions to setup keyboard event handling
+with SDL. Refer to SDL documentation to find the key code constants.
+
+Commit, push to the private repository (get it from the instructor if you don't
+have one). Upload ALL the engine sources, not only the modified files. Do not
+upload intemidiate and binary files. You grade will be lowered for that. Submit
+the last commit ID to Canvas before the deadline.
+
+### Task 5 (Engine Version 3.0)
+
+Ensure that your development environment is set correctly, and you can compile,
+run, and debug the following version of the engine
+
+* TBD
+
+Note that you need to point to a specific commit to get Version 3.0 of the
+graphics engine.
+
+```bash
+git clone ?
+git checkout ?
+```
+
+After updating the engine, do not forget to run
+
+```
+conan install ..
+```
+
+and
+
+```
+cmake ..
+```
+
+to download `stb` image loading library and to regenerate the project files. 
+
+## Task 5 (Engine Version 3.0)
+
+![Transform 1](https://i.imgur.com/crijcUt.png)
+![Transofrm 2](https://i.imgur.com/423Lmbm.png)
+
+Use the third version of the engine from the previous task and add
+`transform1_test.cpp` and `transform2_test.cpp` files to the tests directory.
+Change the `CMakeLists.txt` build configuration to accommodate the new tests.
+
+In the `transform1_test.cpp` test, you should create the scene from the first
+screenshot. The scene should contain the Sun, Venus, Earth, and Moon represente
+with textured spheres. You can find the textures in the `data/images` folder.
+All celestial bodies should rotate around their axis at different speeds. The
+spheres of Venus and Earth should move around the Sun sphere. The Moon should
+rotate around the Earth. The speed of rotation should not depend on the speed of
+rendering.
+
+In the `transform2_test.cpp` test, you should create the clocks from the second
+screenshot. The clocks should rotate around the `y` axis. The rotation should
+not depend on the speed of rendering. It would be best to use the smallest
+number of geometry buffers sent to the GPU. The clocks must show the correct
+local time of the computer where the program is running.
 
 Commit, push to the private repository (get it from the instructor if you don't
 have one). Upload ALL the engine sources, not only the modified files. Do not
