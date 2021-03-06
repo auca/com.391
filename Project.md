@@ -212,7 +212,7 @@ cmake ..
 
 to download `stb` image loading library and to regenerate the project files. 
 
-## Task 5 (Engine Version 3.0)
+## Task 6 (Engine Version 3.0)
 
 ![Transform 1](https://i.imgur.com/crijcUt.png)
 ![Transofrm 2](https://i.imgur.com/423Lmbm.png)
