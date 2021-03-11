@@ -263,6 +263,26 @@ cmake ..
 
 to regenerate the project files.
 
+## Task 8 (Engine Version 4.0)
+
+![Lights](https://i.imgur.com/5PSbN06.png)
+
+Use the fourth version of the engine from the previous task and add
+`lighting_test.cpp` file to the tests directory. Change the `CMakeLists.txt`
+build configuration to accommodate the new test.
+
+In the `lighting_test.cpp` test, you should create the scene from the first
+screenshot. The scene should contain a plane stretching up to the horizon, a
+sphere at the center, and two point-lights represented by two additional white
+spheres orbiting around. There are at least three simple approaches to how you
+can add a second light. The challenge of this task is to figure it out on your
+own.
+
+Commit, push to the private repository (get it from the instructor if you don't
+have one). Upload ALL the engine sources, not only the modified files. Do not
+upload intemidiate and binary files. You grade will be lowered for that. Submit
+the last commit ID to Canvas before the deadline.
+
 ## Resources
 
 3D Math Primer for Graphics and Game Development, Second Edition by Fletcher
