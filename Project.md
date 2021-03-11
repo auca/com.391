@@ -278,6 +278,8 @@ spheres orbiting around. There are at least three simple approaches to how you
 can add a second light. The challenge of this task is to figure it out on your
 own.
 
+You can find the shader for one light [here](https://gist.github.com/toksaitov/41ccaaad7ea513f3240de80cd147d053).
+
 Commit, push to the private repository (get it from the instructor if you don't
 have one). Upload ALL the engine sources, not only the modified files. Do not
 upload intemidiate and binary files. You grade will be lowered for that. Submit
