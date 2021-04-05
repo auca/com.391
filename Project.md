@@ -285,6 +285,29 @@ have one). Upload ALL the engine sources, not only the modified files. Do not
 upload intemidiate and binary files. You grade will be lowered for that. Submit
 the last commit ID to Canvas before the deadline.
 
+### Task 9 (Engine Version 5.0)
+
+Ensure that your development environment is set correctly, and you can compile,
+run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/tree/3fadc0c4cc982c987670b8e93ca65c2ee148d5f1>
+
+Note that you need to point to a specific commit to get Version 5.0 of the
+graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git
+git checkout 3fadc0c4cc982c987670b8e93ca65c2ee148d5f1
+```
+
+After updating the engine, do not forget to run
+
+```
+cmake ..
+```
+
+to download `imgui` library and to regenerate the project files. 
+
 ## Resources
 
 3D Math Primer for Graphics and Game Development, Second Edition by Fletcher
