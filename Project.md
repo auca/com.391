@@ -308,6 +308,31 @@ cmake ..
 
 to download `imgui` library and to regenerate the project files. 
 
+## Task 10 (Engine Version 5.0)
+
+Use the fifth version of the engine from the previous task and add
+`game_test.cpp` file to the tests directory. Change the `CMakeLists.txt`
+build configuration to accommodate the new test.
+
+In the `game_test.cpp` test, you should create one level of any classic 2.5D
+shooter game (like Doom).
+
+Your level should include at least the following:
+
+* Create one level (at least one rectangular room with textured ground and walls).
+* Add at least one enemy type (the enemy should be a plane with texture-based sprite animation, enemies can move).
+* Add the first-person player (the player should be the camera and an overlay mesh with texture-based sprite animation).
+* Add any basic game logic (shooting, destroying enemies with ray intersection testing, etc...). You can use
+  overlays to add 'You won!' / 'You lost!', 'Menu' screens.
+
+Note that any extra effort may be awarded with a small number of extra points.
+Be creative.
+
+Commit, push to the private repository (get it from the instructor if you don't
+have one). Upload ALL the engine sources, not only the modified files. Do not
+upload intemidiate and binary files. You grade will be lowered for that. Submit
+the last commit ID to Canvas before the deadline.
+
 ## Resources
 
 3D Math Primer for Graphics and Game Development, Second Edition by Fletcher
