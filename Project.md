@@ -290,14 +290,14 @@ the last commit ID to Canvas before the deadline.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/3fadc0c4cc982c987670b8e93ca65c2ee148d5f1>
+* <https://github.com/toksaitov/asr-project/tree/8db682dabd766058febe41ac784ef56dc381b201>
 
 Note that you need to point to a specific commit to get Version 5.0 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout 3fadc0c4cc982c987670b8e93ca65c2ee148d5f1
+git checkout 8db682dabd766058febe41ac784ef56dc381b201
 ```
 
 After updating the engine, do not forget to run
@@ -309,6 +309,8 @@ cmake ..
 to download `imgui` library and to regenerate the project files. 
 
 ## Task 10 (Engine Version 5.0)
+
+![Sprites](https://i.imgur.com/nRWcwWN.png)
 
 Use the fifth version of the engine from the previous task and add
 `game_test.cpp` file to the tests directory. Change the `CMakeLists.txt`
@@ -327,6 +329,12 @@ Your level should include at least the following:
 
 Note that any extra effort may be awarded with a small number of extra points.
 Be creative.
+
+You may find the following test files usefull:
+
+* `general_usage_test.cpp`
+* `box_test.cpp`
+* `normal_mapping_test.cpp`
 
 Commit, push to the private repository (get it from the instructor if you don't
 have one). Upload ALL the engine sources, not only the modified files. Do not
