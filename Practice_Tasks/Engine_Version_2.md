@@ -11,7 +11,7 @@ In this set of practice tasks, students have to develop various test
 applications to demonstrate the correctness of the **object-oriented** engine's
 implementation.
 
-### Task 1 (Engine Version 2.0)
+### Task 9 (Engine Version 2.0)
 
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
@@ -34,7 +34,7 @@ cmake ..
 
 to download `imgui` library and to regenerate the project files. 
 
-## Task 2 (Engine Version 2.0)
+## Task 10 (Engine Version 2.0)
 
 Port all the tests from the procedural version of the engine to the new
 object-oriented version that you have compiled in the previous task.
@@ -44,7 +44,7 @@ have one). Upload ALL the engine sources, not only the modified files. Do not
 upload intemidiate and binary files. You grade will be lowered for that. Submit
 the last commit ID to Canvas before the deadline.
 
-## Task 3 (Engine Version 2.0)
+## Task 11 (Engine Version 2.0)
 
 ![Sprites](https://i.imgur.com/nRWcwWN.png)
 
