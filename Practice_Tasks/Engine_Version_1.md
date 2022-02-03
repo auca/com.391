@@ -18,14 +18,14 @@ implementation.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/48ed4628a758fb6fdd3998d2a5b4dbad37606849>
+* <https://github.com/toksaitov/asr-project/tree/267644121a315f242c6136bcd2a8f2554a50775a>
 
 Note that you need to point to a specific commit to get Version 1.0 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout 48ed4628a758fb6fdd3998d2a5b4dbad37606849
+git checkout 267644121a315f242c6136bcd2a8f2554a50775a
 ```
 
 ### Task 2 (Engine Version 1.0)
@@ -96,190 +96,6 @@ following vertices and triangles.
 The mesh on the right is shown for demonstration purposes only. You don't have
 to draw it. Nevertheless, ensure that your circle and rectangle geometries have
 the same vertices and triangles. You will get zero otherwise.
-
-Commit, push to the private repository (get it from the instructor if you don't
-have one). Upload ALL the engine sources, not only the modified files. Do not
-upload intemidiate and binary files. You grade will be lowered for that. Submit
-the last commit ID to Canvas before the deadline.
-
-### Task 3 (Engine Version 1.1)
-
-Ensure that your development environment is set correctly, and you can compile,
-run, and debug the following version of the engine
-
-* <https://github.com/toksaitov/asr-project/tree/6534c8ce3db4654663cfdc8ca51d7ea38264b557>
-
-Note that you need to point to a specific commit to get Version 1.1 of the
-graphics engine.
-
-```bash
-git clone https://github.com/toksaitov/asr-project.git
-git checkout 6534c8ce3db4654663cfdc8ca51d7ea38264b557
-```
-
-After updating the engine, do not forget to run
-
-```
-conan install ..
-```
-
-and
-
-```
-cmake ..
-```
-
-to download `glm` Math library and to regenerate the project files.
-
-### Task 4 (Engine Version 1.1)
-
-![Sphere](https://i.imgur.com/eTUIFQE.png)
-![Box](https://i.imgur.com/UBmVOt2.png)
-
-Use the 1.1 version of the engine from the previous task and add
-`sphere_test.cpp` and `box_test.cpp` files to the tests directory.  Change the
-`CMakeLists.txt` build configuration to accommodate the new tests.
-
-Create functions
-
-```cpp
- std::pair<std::vector<asr::Vertex>, std::vector<unsigned int>>
-   generate_sphere_geometry_data(
-      float radius,
-      unsigned int width_segments_count,
-      unsigned int height_segments_count
-   );
-```
-
-and
-
-```cpp
- std::pair<std::vector<asr::Vertex>, std::vector<unsigned int>>
-   generate_box_geometry_data(
-      float width,
-      float height,
-      float depth
-      unsigned int width_segments_count,
-      unsigned int height_segments_count,
-      unsigned int depth_segments_count
-   );
-```
-
-Use them in the `main` function at an appropriate place to generate the geometry
-vertex and index data packed into a vector (don't forget to include its header).
-Allow parameters such as radius, width, height segment count to influence the
-number of triangles generated to represent the figure. The vertices of the
-triangles MUST be specified in the counter-clockwise (CCW) order. You DO NOT
-need to draw edges and vertices.
-
-In both tests, add event handlers to allow control of the camera. The `WASD`
-keys must orient the camera (rotate to left/right, up/down). The arrow keys
-(`UP`, `DOWN`) must move the camera forward to the current orientation of the
-camera. You can use `set_es2_sdl_key_down_event_handler` or
-`set_es2_sdl_keys_down_event_handler` functions to setup keyboard event handling
-with SDL. Refer to SDL documentation to find the key code constants.
-
-Commit, push to the private repository (get it from the instructor if you don't
-have one). Upload ALL the engine sources, not only the modified files. Do not
-upload intemidiate and binary files. You grade will be lowered for that. Submit
-the last commit ID to Canvas before the deadline.
-
-### Task 5 (Engine Version 1.2)
-
-Ensure that your development environment is set correctly, and you can compile,
-run, and debug the following version of the engine
-
-* <https://github.com/toksaitov/asr-project/tree/ecd715fe892d5a9b7eda211c8d7b1dd939376b23>
-
-Note that you need to point to a specific commit to get Version 1.2 of the
-graphics engine.
-
-```bash
-git clone https://github.com/toksaitov/asr-project.git
-git checkout ecd715fe892d5a9b7eda211c8d7b1dd939376b23
-```
-
-After updating the engine, do not forget to run
-
-```
-conan install ..
-```
-
-and
-
-```
-cmake ..
-```
-
-to download `stb` image loading library and to regenerate the project files. 
-
-## Task 6 (Engine Version 1.2)
-
-![Transform 1](https://i.imgur.com/crijcUt.png)
-![Transofrm 2](https://i.imgur.com/423Lmbm.png)
-
-Use the 1.2 version of the engine from the previous task and add
-`transform1_test.cpp` and `transform2_test.cpp` files to the tests directory.
-Change the `CMakeLists.txt` build configuration to accommodate the new tests.
-
-In the `transform1_test.cpp` test, you should create the scene from the first
-screenshot. The scene should contain the Sun, Venus, Earth, and Moon represente
-with textured spheres. You can find the textures in the `data/images` folder.
-All celestial bodies should rotate around their axis at different speeds. The
-spheres of Venus and Earth should move around the Sun sphere. The Moon should
-rotate around the Earth. The speed of rotation should not depend on the speed of
-rendering.
-
-In the `transform2_test.cpp` test, you should create the clocks from the second
-screenshot. The clocks should rotate around the `y` axis. The rotation should
-not depend on the speed of rendering. It would be best to use the smallest
-number of geometry buffers sent to the GPU. The clocks must show the correct
-local time of the computer where the program is running.
-
-Commit, push to the private repository (get it from the instructor if you don't
-have one). Upload ALL the engine sources, not only the modified files. Do not
-upload intemidiate and binary files. You grade will be lowered for that. Submit
-the last commit ID to Canvas before the deadline.
-
-### Task 7 (Engine Version 1.3)
-
-Ensure that your development environment is set correctly, and you can compile,
-run, and debug the following version of the engine
-
-* <https://github.com/toksaitov/asr-project/tree/eadd1c40994fa6d9e51f2282d10030ccf452c21f>
-
-Note that you need to point to a specific commit to get Version 1.3 of the
-graphics engine.
-
-```bash
-git clone https://github.com/toksaitov/asr-project.git
-git checkout eadd1c40994fa6d9e51f2282d10030ccf452c21f
-```
-
-After updating the engine, do not forget to run
-
-```
-cmake ..
-```
-
-to regenerate the project files.
-
-## Task 8 (Engine Version 1.3)
-
-![Lights](https://i.imgur.com/5PSbN06.png)
-
-Use the 1.3 version of the engine from the previous task and add
-`lighting_test.cpp` file to the tests directory. Change the `CMakeLists.txt`
-build configuration to accommodate the new test.
-
-In the `lighting_test.cpp` test, you should create the scene from the first
-screenshot. The scene should contain a plane stretching up to the horizon, a
-sphere at the center, and two point-lights represented by two additional white
-spheres orbiting around. There are at least three simple approaches to how you
-can add a second light. The challenge of this task is to figure it out on your
-own.
-
-You can find the shader for one light [here](https://gist.github.com/toksaitov/41ccaaad7ea513f3240de80cd147d053).
 
 Commit, push to the private repository (get it from the instructor if you don't
 have one). Upload ALL the engine sources, not only the modified files. Do not
