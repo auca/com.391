@@ -18,14 +18,14 @@ implementation.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/b6987ff30628733cde9b64798accbb81f73782e9>
+* <https://github.com/toksaitov/asr-project/tree/8fd82b923e3562e76aa782f5ca2c9cb9e473f0bb>
 
 Note that you need to point to a specific commit to get Version 1.0 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout b6987ff30628733cde9b64798accbb81f73782e9
+git checkout 8fd82b923e3562e76aa782f5ca2c9cb9e473f0bb
 ```
 
 ### Task 2 (Engine Version 1.0)
@@ -40,21 +40,21 @@ copy the `triangle_test.cpp` code into the files to use as a starter code.
 Create a structure to represent one vertex of a geometry. Create functions
 
 ```cpp
-std::vector<Vertex> generate_circle_geometry_data(
-                        float radius,
-                        unsigned int segment_count
-                    );
+std::vector<float> generate_circle_geometry_data(
+                       float radius,
+                       unsigned int segment_count
+                   );
 ```
 
 and
 
 ```cpp
-std::vector<Vertex> generate_rectangle_geometry_data(
-                        float width,
-                        float height,
-                        unsigned int width_segments_count,
-                        unsigned int height_segments_count
-                    );
+std::vector<float> generate_rectangle_geometry_data(
+                       float width,
+                       float height,
+                       unsigned int width_segments_count,
+                       unsigned int height_segments_count
+                   );
 ```
 
 Use them in the `main` function at an appropriate place to generate the geometry
