@@ -97,10 +97,10 @@ The mesh on the right is shown for demonstration purposes only. You don't have
 to draw it. Nevertheless, ensure that your circle and rectangle geometries have
 the same vertices and triangles. You will get zero otherwise.
 
-Commit, push to the private repository (get it from the instructor if you don't
-have one). Upload ALL the engine sources, not only the modified files. Do not
-upload intemidiate and binary files. You grade will be lowered for that. Submit
-the last commit ID to Canvas before the deadline.
+Commit and push to the private repository (get it from the instructor if you don't
+have one). You should send the `circle_test.cpp` and `rectangle_test.cpp` files
+placed under the `lab-1` directory. Do not submit any other files. You grade will
+be lowered for that. Submit the last commit ID to Canvas before the deadline.
 
 ## Resources
 
