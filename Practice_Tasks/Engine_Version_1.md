@@ -107,14 +107,14 @@ be lowered for that. Submit the last commit ID to Canvas before the deadline.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/?>
+* <https://github.com/toksaitov/asr-project/tree/809a525f1040bb18b35ca9ea5940e04d7163931d>
 
 Note that you need to point to a specific commit to get Version 1.1 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout ?
+git checkout 809a525f1040bb18b35ca9ea5940e04d7163931d
 ```
 
 After updating the engine, do not forget to run
@@ -144,37 +144,41 @@ Use the 1.1 version of the engine from the previous task and add `triangle_test.
 Create functions
 
 ```cpp
-std::vector<float> generate_triangle_geometry_data(
-                       float width,
-                       float height,
-                       unsigned int width_segments_count,
-                       unsigned int height_segments_count
-                   );
+asr::GeometryPair generate_triangle_geometry_data(
+                      asr::GeometryType geometryType,
+                      float width,
+                      float height,
+                      unsigned int width_segments_count,
+                      unsigned int height_segments_count
+                      glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+                  );
 ```
 
 and
 
 ```cpp
- std::pair<std::vector<asr::Vertex>, std::vector<unsigned int>>
-   generate_sphere_geometry_data(
-      float radius,
-      unsigned int width_segments_count,
-      unsigned int height_segments_count
-   );
+asr::GeometryPair generate_sphere_geometry_data(
+                      asr::GeometryType geometryType,
+                      float radius,
+                      unsigned int width_segments_count,
+                      unsigned int height_segments_count,
+                      glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+                  );
 ```
 
 and
 
 ```cpp
- std::pair<std::vector<asr::Vertex>, std::vector<unsigned int>>
-   generate_box_geometry_data(
-      float width,
-      float height,
-      float depth
-      unsigned int width_segments_count,
-      unsigned int height_segments_count,
-      unsigned int depth_segments_count
-   );
+asr::GeometryPair generate_box_geometry_data(
+                      asr::GeometryType geometryType,
+                      float width,
+                      float height,
+                      float depth
+                      unsigned int width_segments_count,
+                      unsigned int height_segments_count,
+                      unsigned int depth_segments_count,
+                      glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+                  );
 ```
 
 Use them in the `main` function at an appropriate place to generate the geometry
