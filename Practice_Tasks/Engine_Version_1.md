@@ -200,14 +200,14 @@ have one). You should send the `triangle_test.cpp`, `sphere_test.cpp` and `box_t
 placed under the `lab-2` directory. Do not submit any other files. You grade will
 be lowered for that. Submit the last commit ID to Canvas before the deadline.
 
-### Task 5 (Engine Version 3.0)
+### Task 5 (Engine Version 1.2)
 
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
 * <https://github.com/toksaitov/asr-project/tree/?>
 
-Note that you need to point to a specific commit to get Version 3.0 of the
+Note that you need to point to a specific commit to get Version 1.2 of the
 graphics engine.
 
 ```bash
