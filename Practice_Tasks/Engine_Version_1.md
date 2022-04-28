@@ -120,7 +120,7 @@ git checkout 809a525f1040bb18b35ca9ea5940e04d7163931d
 After updating the engine, do not forget to run
 
 ```
-conan install ..
+conan install .. --build missing
 ```
 
 and
@@ -205,20 +205,20 @@ be lowered for that. Submit the last commit ID to Canvas before the deadline.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/?>
+* <https://github.com/toksaitov/asr-project/tree/2916eb4bf0e95efb0307767b0c31693ef00eca4b>
 
 Note that you need to point to a specific commit to get Version 1.2 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout ?
+git checkout 2916eb4bf0e95efb0307767b0c31693ef00eca4b
 ```
 
 After updating the engine, do not forget to run
 
 ```
-conan install ..
+conan install .. --build missing
 ```
 
 and
