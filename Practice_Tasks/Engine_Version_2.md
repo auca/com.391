@@ -17,7 +17,7 @@ run, and debug the following version of the engine
 
 * <https://github.com/toksaitov/asr-project/tree/8d174bdcaf0c793f54597f9371e4b075c8389d58>
 
-Note that you need to point to a specific commit to get Version 1.1 of the
+Note that you need to point to a specific commit to get Version 2.0 of the
 graphics engine.
 
 ```bash
