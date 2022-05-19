@@ -227,7 +227,7 @@ and
 cmake ..
 ```
 
-to download `stb` image loading library and to regenerate the project files. 
+to download `stb` image loading library and to regenerate the project files.
 
 ## Task 6 (Engine Version 1.2)
 
@@ -252,11 +252,51 @@ not depend on the speed of rendering. It would be best to use the smallest
 number of geometry buffers sent to the GPU. The clocks must show the correct
 local time of the computer where the program is running.
 
-
 Commit and push to the private repository (get it from the instructor if you don't
 have one). You should send the `transform1_test.cpp`, `transform2_test.cpp` files
 placed under the `lab-3` directory. Do not submit any other files. You grade will
 be lowered for that. Submit the last commit ID to Canvas before the deadline.
+
+### Task 7 (Engine Version 1.3)
+
+Ensure that your development environment is set correctly, and you can compile,
+run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/tree/af060473de78ff172b6ab7153d330f6695b051a4>
+
+Note that you need to point to a specific commit to get Version 1.3 of the
+graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git
+git checkout af060473de78ff172b6ab7153d330f6695b051a4
+```
+
+After updating the engine, do not forget to run
+
+```
+cmake ..
+```
+
+to regenerate the project files.
+
+## Task 8 (Engine Version 1.3)
+
+![Lights](https://i.imgur.com/5PSbN06.png)
+
+Use the 1.3 version of the engine from the previous task and the
+`lighting_test.cpp` file in the tests directory. In the `lighting_test.cpp` test,
+you should create the scene from the first screenshot. The scene should contain
+a plane stretching up to the horizon, a sphere at the center, and (!) two (not one)
+point-lights represented by two additional white spheres orbiting around. There
+are at least three simple approaches to how you can add a second light. The
+challenge of this task is to figure it out on your own. You may have to modify
+the shader in this task. Be prepared for that.
+
+Commit and push to the private repository (get it from the instructor if you
+don't have one). You should send the `lighting_test.cpp` files placed under the
+`lab-4` directory. Do not submit any other files. You grade will be lowered for
+that. Submit the last commit ID to Canvas before the deadline.
 
 ## Resources
 
