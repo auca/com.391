@@ -205,14 +205,14 @@ be lowered for that. Submit the last commit ID to Canvas before the deadline.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/93e3b234b61df70216bba3f55872848f19127f25>
+* <https://github.com/toksaitov/asr-project/tree/2916eb4bf0e95efb0307767b0c31693ef00eca4b>
 
 Note that you need to point to a specific commit to get Version 1.2 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout 93e3b234b61df70216bba3f55872848f19127f25
+git checkout 2916eb4bf0e95efb0307767b0c31693ef00eca4b
 ```
 
 After updating the engine, do not forget to run
@@ -262,14 +262,14 @@ be lowered for that. Submit the last commit ID to Canvas before the deadline.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/af060473de78ff172b6ab7153d330f6695b051a4>
+* <https://github.com/toksaitov/asr-project/tree/17046efc1ecf5d8f87d2e42f8b39ee8172c4323c>
 
 Note that you need to point to a specific commit to get Version 1.3 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout af060473de78ff172b6ab7153d330f6695b051a4
+git checkout 17046efc1ecf5d8f87d2e42f8b39ee8172c4323c
 ```
 
 After updating the engine, do not forget to run
