@@ -15,14 +15,14 @@ demonstrate the correctness of the **object-oriented** engine's implementation.
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/70592b9889c67ca06a649c0864023bbec9bdd311>
+* <https://github.com/toksaitov/asr-project/tree/?>
 
 Note that you need to point to a specific commit to get Version 2.0 of the
 graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout 70592b9889c67ca06a649c0864023bbec9bdd311
+git checkout ?
 ```
 
 After updating the engine, do not forget to run
