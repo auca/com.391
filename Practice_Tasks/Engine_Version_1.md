@@ -73,7 +73,7 @@ The geometry MUST have the following vertices and triangles for ten segments of 
 The geometry MUST have the following vertices and triangles for five width and height segments of a rectangle.
 
 ![Rectangle with five width and five height segments](https://i.imgur.com/XUcM9EG.png)
-![Mesh of a rectangle with five width and five height segments](https://i.imgur.com/mc2me62.png)
+![Mesh of a rectangle with five width and five height segments](https://i.imgur.com/AGgiPDB.png)
 
 The mesh on the right is shown for demonstration purposes only. You don't have to draw it. Nevertheless, ensure that your circle and rectangle geometries have the same vertices and triangles. You will get zero otherwise.
 
