@@ -81,32 +81,18 @@ Commit and push to the private repository (get it from the instructor if you don
 
 ### Task 3 (Engine Version 1.1)
 
-Ensure that your development environment is set correctly, and you can compile,
-run, and debug the following version of the engine
+Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/?>
+* <https://github.com/toksaitov/asr-project/tree/b018c870566cad0963111a26d11a71180b450134>
 
-Note that you need to point to a specific commit to get Version 1.1 of the
-graphics engine.
+Note that you need to point to a specific commit to get Version 1.1 of the graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout ?
+git checkout b018c870566cad0963111a26d11a71180b450134
 ```
 
-After updating the engine, do not forget to run
-
-```
-conan install .. --build missing
-```
-
-and
-
-```
-cmake ..
-```
-
-to download `glm` Math library and to regenerate the project files.
+After updating the engine, remember to recreate the build directory by following the engine's Readme file.
 
 ### Task 4 (Engine Version 1.1)
 
@@ -114,8 +100,7 @@ to download `glm` Math library and to regenerate the project files.
 ![Sphere](https://i.imgur.com/eTUIFQE.png)
 ![Box](https://i.imgur.com/UBmVOt2.png)
 
-Use the 1.1 version of the engine from the previous task and add `triangle_test.cpp`
-`sphere_test.cpp` and `box_test.cpp` files to the tests directory.  Change the
+Use the 1.1 version of the engine from the previous task and add `triangle_test.cpp`, `sphere_test.cpp` and `box_test.cpp` files to the tests directory. Change the
 `CMakeLists.txt` build configuration to accommodate the new tests.
 
 Create functions
@@ -158,24 +143,11 @@ asr::GeometryPair generate_box_geometry_data(
                   );
 ```
 
-Use them in the `main` function at an appropriate place to generate the geometry
-vertex and index data packed into a vector (don't forget to include its header).
-Allow parameters such as radius, width, height segment count to influence the
-number of triangles generated to represent the figure. The vertices of the
-triangles MUST be specified in the counter-clockwise (CCW) order. You DO NOT
-need to draw edges and vertices.
+Use them in the `main` function at an appropriate place to generate the geometry vertex and index data packed into a C++ vector container (don't forget to include its header). Allow parameters such as radius, width, height segment count to influence the number of triangles generated to represent the figure. The vertices of the triangles MUST be specified in the counter-clockwise (CCW) order. You DO NOT need to draw edges and vertices.
 
-In both tests, add event handlers to allow control of the camera. The `WASD`
-keys must orient the camera (rotate to left/right, up/down). The arrow keys
-(`UP`, `DOWN`) must move the camera forward to the current orientation of the
-camera. You can use `set_sdl_key_down_event_handler` or
-`set_sdl_keys_down_event_handler` functions to setup keyboard event handling
-with SDL. Refer to SDL documentation to find the key code constants.
+In both tests, add event handlers to allow control of the camera. The `WASD` keys must orient the camera (rotate to left/right, up/down). The arrow keys (`UP`, `DOWN`) must move the camera forward to the current orientation of the camera. You can use `set_sdl_key_down_event_handler` or `set_sdl_keys_down_event_handler` functions to setup keyboard event handling with SDL. Refer to SDL documentation to find the key code constants.
 
-Commit and push to the private repository (get it from the instructor if you don't
-have one). You should send the `triangle_test.cpp`, `sphere_test.cpp` and `box_test.cpp` files
-placed under the `lab-2` directory. Do not submit any other files. You grade will
-be lowered for that. Submit the last commit ID to Canvas before the deadline.
+Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `triangle_test.cpp`, `sphere_test.cpp` and `box_test.cpp` files placed under the `lab-2` directory. Do not submit any other files. Your grade will be lowered for that. Submit the last commit URL to Canvas before the deadline.
 
 ### Task 5 (Engine Version 1.2)
 
