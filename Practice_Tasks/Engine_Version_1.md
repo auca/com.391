@@ -83,13 +83,13 @@ Commit and push to the private repository (get it from the instructor if you don
 
 Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/b018c870566cad0963111a26d11a71180b450134>
+* <https://github.com/toksaitov/asr-project/tree/d33cf7c0972a540741128f59c48adf229703c847>
 
 Note that you need to point to a specific commit to get Version 1.1 of the graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout b018c870566cad0963111a26d11a71180b450134
+git checkout d33cf7c0972a540741128f59c48adf229703c847
 ```
 
 After updating the engine, remember to recreate the build directory by following the engine's Readme file.
