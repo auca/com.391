@@ -110,8 +110,7 @@ asr::GeometryPair generate_triangle_geometry_data(
                       asr::GeometryType geometryType,
                       float width,
                       float height,
-                      unsigned int width_segments_count,
-                      unsigned int height_segments_count
+                      unsigned int segment_count,
                       glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
                   );
 ```
