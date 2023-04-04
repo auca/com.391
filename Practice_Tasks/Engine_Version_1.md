@@ -152,7 +152,7 @@ Commit and push to the private repository (get it from the instructor if you don
 Ensure that your development environment is set correctly, and you can compile,
 run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/?>
+* <https://github.com/toksaitov/asr-project/tree/eb961f1e25c71ca5da007a6a9dda8a0d3223fe3b>
 
 Note that you need to point to a specific commit to get Version 1.2 of the
 graphics engine.
