@@ -159,7 +159,7 @@ graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
-git checkout ?
+git checkout eb961f1e25c71ca5da007a6a9dda8a0d3223fe3b
 ```
 
 After updating the engine, do not forget to run
