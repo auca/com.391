@@ -149,13 +149,11 @@ Commit and push to the private repository (get it from the instructor if you don
 
 ### Task 5 (Engine Version 1.2)
 
-Ensure that your development environment is set correctly, and you can compile,
-run, and debug the following version of the engine
+Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
 * <https://github.com/toksaitov/asr-project/tree/02a5347804bb175b7093feec45affe3fb1312d77>
 
-Note that you need to point to a specific commit to get Version 1.2 of the
-graphics engine.
+Note that you need to point to a specific commit to get Version 1.2 of the graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
@@ -181,38 +179,21 @@ to download `stb` image loading library and to regenerate the project files.
 ![Transform 1](https://i.imgur.com/crijcUt.png)
 ![Transofrm 2](https://i.imgur.com/423Lmbm.png)
 
-Use the 1.2 version of the engine from the previous task and add
-`transform1_test.cpp` and `transform2_test.cpp` files to the tests directory.
-Change the `CMakeLists.txt` build configuration to accommodate the new tests.
+Use the 1.2 version of the engine from the previous task and add `transform1_test.cpp` and `transform2_test.cpp` files to the tests directory. Change the `CMakeLists.txt` build configuration to accommodate the new tests.
 
-In the `transform1_test.cpp` test, you should create the scene from the first
-screenshot. The scene should contain the Sun, Venus, Earth, and Moon represented
-with textured spheres. You can find the textures in the `data/images` folder.
-All celestial bodies should rotate around their axis at different speeds. The
-spheres of Venus and Earth should move around the Sun sphere. The Moon should
-rotate around the Earth. The speed of rotation should not depend on the speed of
-rendering.
+In the `transform1_test.cpp` test, you should create the scene from the first screenshot. The scene should contain the Sun, Venus, Earth, and Moon represented with textured spheres. You can find the textures in the `data/images` folder. All celestial bodies should rotate around their axis at different speeds. The spheres of Venus and Earth should move around the Sun sphere. The Moon should rotate around the Earth. The speed of rotation should not depend on the speed of rendering.
 
-In the `transform2_test.cpp` test, you should create the clocks from the second
-screenshot. The clocks should rotate around the `y` axis. The rotation should
-not depend on the speed of rendering. It would be best to use the smallest
-number of geometry buffers sent to the GPU. The clocks must show the correct
-local time of the computer where the program is running.
+In the `transform2_test.cpp` test, you should create the clocks from the second screenshot. The clocks should rotate around the `y` axis. The rotation should not depend on the speed of rendering. It would be best to use the smallest number of geometry buffers sent to the GPU. The clocks must show the correct local time of the computer where the program is running.
 
-Commit and push to the private repository (get it from the instructor if you don't
-have one). You should send the `transform1_test.cpp`, `transform2_test.cpp` files
-placed under the `lab-3` directory. Do not submit any other files. You grade will
-be lowered for that. Submit the last commit ID to Canvas before the deadline.
+Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `transform1_test.cpp`, `transform2_test.cpp` files placed under the `lab-3` directory. Do not submit any other files. You grade will be lowered for that. Submit the last commit ID to Canvas before the deadline.
 
 ### Task 7 (Engine Version 1.3)
 
-Ensure that your development environment is set correctly, and you can compile,
-run, and debug the following version of the engine
+Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
 * <https://github.com/toksaitov/asr-project/commit/79da14b052f4691c4ca01d9aa0df51ff8b43c7d0>
 
-Note that you need to point to a specific commit to get Version 1.3 of the
-graphics engine.
+Note that you need to point to a specific commit to get Version 1.3 of the graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git
@@ -231,24 +212,13 @@ to regenerate the project files.
 
 ![Lights](https://i.imgur.com/5PSbN06.png)
 
-Use the 1.3 version of the engine from the previous task and the
-`lighting_test.cpp` file in the tests directory. In the `lighting_test.cpp` test,
-you should create the scene from the first screenshot. The scene should contain
-a plane stretching up to the horizon, a sphere at the center, and (!) two (not one)
-point-lights represented by two additional white spheres orbiting around. There
-are at least three simple approaches to how you can add a second light. The
-challenge of this task is to figure it out on your own. You may have to modify
-the shader in this task. Be prepared for that.
+Use the 1.3 version of the engine from the previous task and the `lighting_test.cpp` file in the tests directory. In the `lighting_test.cpp` test, you should create the scene from the first screenshot. The scene should contain a plane stretching up to the horizon, a sphere at the center, and (!) two (not one) point-lights represented by two additional white spheres orbiting around. There are at least three simple approaches to how you can add a second light. The challenge of this task is to figure it out on your own. You may have to modify the shader in this task. Be prepared for that.
 
-Commit and push to the private repository (get it from the instructor if you
-don't have one). You should send the `lighting_test.cpp` files placed under the
-`lab-4` directory. Do not submit any other files. You grade will be lowered for
-that. Submit the last commit ID to Canvas before the deadline.
+Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `lighting_test.cpp` files placed under the `lab-4` directory. Do not submit any other files. You grade will be lowered for that. Submit the last commit ID to Canvas before the deadline.
 
 ## Resources
 
-3D Math Primer for Graphics and Game Development, Second Edition by Fletcher
-Done and Ian Parberry
+3D Math Primer for Graphics and Game Development, Second Edition by Fletcher Done and Ian Parberry
 
 Chapter 3, 4, 5, 6
 Chapter 10
