@@ -47,7 +47,7 @@ You have two options for this bonus task:
 
 The projects are open, and we encourage you to be creative here. Your task is to impress TAs and instructors to get up to 5 bonus points. Refer to the notes of the last class for specific recommendations.
 
-Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `game_test.cpp` for option one or `demo_test.cpp` for option two. Place one file under the `project` directory. Do not submit any other files. Your grade will be lowered for that. Submit the last commit ID to Canvas before the deadline.
+Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `game_test.cpp` for option one or `demo_test.cpp` for option two. Place one file under the `project` directory. Do not submit any other files. Your grade will be lowered for that. Submit the last commit URL to Canvas before the deadline.
 
 ## Resources
 

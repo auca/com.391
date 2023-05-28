@@ -185,7 +185,7 @@ In the `transform1_test.cpp` test, you should create the scene from the first sc
 
 In the `transform2_test.cpp` test, you should create the clocks from the second screenshot. The clocks should rotate around the `y` axis. The rotation should not depend on the speed of rendering. It would be best to use the smallest number of geometry buffers sent to the GPU. The clocks must show the correct local time of the computer where the program is running.
 
-Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `transform1_test.cpp`, `transform2_test.cpp` files placed under the `lab-3` directory. Do not submit any other files. You grade will be lowered for that. Submit the last commit ID to Canvas before the deadline.
+Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `transform1_test.cpp`, `transform2_test.cpp` files placed under the `lab-3` directory. Do not submit any other files. You grade will be lowered for that. Submit the last commit URL to Canvas before the deadline.
 
 ### Task 7 (Engine Version 1.3)
 
@@ -214,7 +214,7 @@ to regenerate the project files.
 
 Use the 1.3 version of the engine from the previous task and the `lighting_test.cpp` file in the tests directory. In the `lighting_test.cpp` test, you should create the scene from the first screenshot. The scene should contain a plane stretching up to the horizon, a sphere at the center, and (!) two (not one) point-lights represented by two additional white spheres orbiting around. There are at least three simple approaches to how you can add a second light. The challenge of this task is to figure it out on your own. You may have to modify the shader in this task. Be prepared for that.
 
-Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `lighting_test.cpp` files placed under the `lab-4` directory. Do not submit any other files. You grade will be lowered for that. Submit the last commit ID to Canvas before the deadline.
+Commit and push to the private repository (get it from the instructor if you don't have one). You should send the `lighting_test.cpp` files placed under the `lab-4` directory. Do not submit any other files. You grade will be lowered for that. Submit the last commit URL to Canvas before the deadline.
 
 ## Resources
 
