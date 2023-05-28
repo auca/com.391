@@ -32,7 +32,7 @@ and
 cmake ..
 ```
 
-to download `imgui` and `sdl_mixer/2.0.4` libraries and to regenerate the project files.
+to download `imgui` and `sdl_mixer` libraries and to regenerate the project files.
 
 If you have trouble building the engine, disable the Audio library by removing the line `sdl_mixer/2.0.4` from the `conanfile.txt`.
 
@@ -42,8 +42,8 @@ If you have trouble building the engine, disable the Audio library by removing t
 
 You have two options for this bonus task:
 
-1. Build one level of an FPS (First-Person Shooter) game by modifying/improving the `general_usage_test.cpp`.
-2. Build a small demo inspired by the [Demoscene](https://en.wikipedia.org/wiki/Demoscene) subculture.
+1. Build one level of an FPS (First-Person Shooter) game by modifying/improving the `general_usage_test.cpp` in a new file `demo_test.cpp`.
+2. Build a small demo in `demo_test.cpp` inspired by the [Demoscene](https://en.wikipedia.org/wiki/Demoscene) subculture. You can find a lot of examples on [YouTube](https://www.youtube.com/results?search_query=demoscene).
 
 The projects are open, and we encourage you to be creative here. Your task is to impress TAs and instructors to get up to 5 bonus points. Refer to the notes of the last class for specific recommendations.
 
