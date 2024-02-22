@@ -13,14 +13,14 @@ In this set of practice tasks, students must develop various test applications t
 
 Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/6c7db14f1a2bab226e3aa7057d4974d1d9ed1422>
+* <https://github.com/toksaitov/asr-project/commit/46cf65a6f14c207977851b731f5d177fd3379624>
 
 Note that you must point Git to a specific commit to get Version 1.0 of the graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git asr-1.0
 cd asr-1.0
-git checkout 6c7db14f1a2bab226e3aa7057d4974d1d9ed1422
+git checkout 46cf65a6f14c207977851b731f5d177fd3379624
 ```
 
 ### Task 2 (Engine Version 1.0)
@@ -77,6 +77,72 @@ The geometry MUST have the following vertices and triangles for five width and h
 ![Mesh of a rectangle with five width and five height segments](https://i.imgur.com/AGgiPDB.png)
 
 The mesh on the right is shown for demonstration purposes only. You don't have to draw it. Nevertheless, ensure that your circle and rectangle geometries have the same vertices and triangles. You will get zero otherwise.
+
+### Task 3 (Engine Version 1.1)
+
+Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/commit/5980e337f0f23c35d43d9bd7e1232eb95ccfbaf9>
+
+Note that you need to point to a specific commit to get Version 1.1 of the graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git
+git checkout 5980e337f0f23c35d43d9bd7e1232eb95ccfbaf9
+```
+
+After updating the engine, remember to recreate the build directory by following the engine's Readme file.
+
+### Task 4 (Engine Version 1.1)
+
+![Triangle](https://i.imgur.com/NLrlhe6.png)
+![Sphere](https://i.imgur.com/eTUIFQE.png)
+![Box](https://i.imgur.com/UBmVOt2.png)
+
+Use the previous task's 1.1 version of the engine and add `triangle_test.cpp`, `sphere_test.cpp`, and `box_test.cpp` files to the tests directory. Change the `CMakeLists.txt` build configuration to accommodate the new tests.
+
+Create functions
+
+```cpp
+asr::GeometryPair generate_triangle_geometry_data(
+                      asr::GeometryType geometry_type,
+                      float width,
+                      float height,
+                      unsigned int segments,
+                      glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+                  );
+```
+
+and
+
+```cpp
+asr::GeometryPair generate_sphere_geometry_data(
+                      asr::GeometryType geometry_type,
+                      float radius,
+                      unsigned int width_segments,
+                      unsigned int height_segments,
+                      glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+                  );
+```
+
+and
+
+```cpp
+asr::GeometryPair generate_box_geometry_data(
+                      asr::GeometryType geometry_type,
+                      float width,
+                      float height,
+                      float depth,
+                      unsigned int width_segments,
+                      unsigned int height_segments,
+                      unsigned int depth_segments,
+                      glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+                  );
+```
+
+Use them in the `main` function at an appropriate place to generate the geometry vertex and index data packed into C++ vector containers (don't forget to include the `vector` header). Allow parameters such as radius, width, and height segment count to influence the number of triangles generated to represent the figure. The vertices of the triangles MUST be specified in the counter-clockwise (CCW) order. You MUST draw edges and vertices, too.
+
+In the `sphere_test.cpp` and `box_test.cpp` tests, add event handlers to allow control of the camera. The `WASD` keys must orient the camera (rotate to left/right, up/down). The arrow keys (`UP`, `DOWN`) must move the camera forward to the current orientation of the camera. You can use the `set_sdl_key_down_event_handler` or `set_sdl_keys_down_event_handler` functions to set up keyboard event handling with SDL. Refer to SDL documentation to find the scan codes of the keyboard.
 
 ## Resources
 
