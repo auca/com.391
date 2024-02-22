@@ -13,7 +13,7 @@ In this set of practice tasks, students must develop various test applications t
 
 Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/commit/46cf65a6f14c207977851b731f5d177fd3379624>
+* <https://github.com/toksaitov/asr-project/tree/46cf65a6f14c207977851b731f5d177fd3379624>
 
 Note that you must point Git to a specific commit to get Version 1.0 of the graphics engine.
 
@@ -82,12 +82,12 @@ The mesh on the right is shown for demonstration purposes only. You don't have t
 
 Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/commit/5980e337f0f23c35d43d9bd7e1232eb95ccfbaf9>
+* <https://github.com/toksaitov/asr-project/tree/5980e337f0f23c35d43d9bd7e1232eb95ccfbaf9>
 
 Note that you need to point to a specific commit to get Version 1.1 of the graphics engine.
 
 ```bash
-git clone https://github.com/toksaitov/asr-project.git
+git clone https://github.com/toksaitov/asr-project.git asr-1.1
 git checkout 5980e337f0f23c35d43d9bd7e1232eb95ccfbaf9
 ```
 
