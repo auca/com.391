@@ -88,6 +88,7 @@ Note that you need to point to a specific commit to get Version 1.1 of the graph
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git asr-1.1
+cd asr-1.1
 git checkout 5980e337f0f23c35d43d9bd7e1232eb95ccfbaf9
 ```
 
@@ -143,6 +144,45 @@ asr::GeometryPair generate_box_geometry_data(
 Use them in the `main` function at an appropriate place to generate the geometry vertex and index data packed into C++ vector containers (don't forget to include the `vector` header). Allow parameters such as radius, width, and height segment count to influence the number of triangles generated to represent the figure. The vertices of the triangles MUST be specified in the counter-clockwise (CCW) order. You MUST draw edges and vertices, too.
 
 In the `sphere_test.cpp` and `box_test.cpp` tests, add event handlers to allow control of the camera. The `WASD` keys must orient the camera (rotate to left/right, up/down). The arrow keys (`UP`, `DOWN`) must move the camera forward to the current orientation of the camera. You can use the `set_sdl_key_down_event_handler` or `set_sdl_keys_down_event_handler` functions to set up keyboard event handling with SDL. Refer to SDL documentation to find the scan codes of the keyboard.
+
+### Task 5 (Engine Version 1.2)
+
+Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/tree/f4e9fbeb7838fff782023dd3d0875d04fe0d52e8>
+
+Note that you need to point to a specific commit to get Version 1.2 of the graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git asr-1.2
+cd asr-1.2
+git checkout f4e9fbeb7838fff782023dd3d0875d04fe0d52e8
+```
+
+After updating the engine, do not forget to run
+
+```
+conan install .. --build missing
+```
+
+and
+
+```
+cmake ..
+```
+
+to download `stb` image loading library and to regenerate the project files.
+
+## Task 6 (Engine Version 1.2)
+
+![Transform 1](https://i.imgur.com/crijcUt.png)
+![Transofrm 2](https://i.imgur.com/423Lmbm.png)
+
+Use the 1.2 version of the engine from the previous task and add `transform1_test.cpp` and `transform2_test.cpp` files to the tests directory. Change the `CMakeLists.txt` build configuration to accommodate the new tests.
+
+In the `transform1_test.cpp` test, you should create the scene from the first screenshot. The scene should contain the Sun, Venus, Earth, and Moon represented with textured spheres. You can find the textures in the `data/images` folder. All celestial bodies should rotate around their axis at different speeds. The spheres of Venus and Earth should move around the Sun sphere. The Moon should rotate around the Earth. The speed of rotation should not depend on the speed of rendering.
+
+In the `transform2_test.cpp` test, you should create the clocks from the second screenshot. The clocks should rotate around the `y` axis. The rotation should not depend on the speed of rendering. It would be best to use the smallest number of geometry buffers sent to the GPU. The clocks must show the correct local time of the computer where the program is running.
 
 ## Resources
 
