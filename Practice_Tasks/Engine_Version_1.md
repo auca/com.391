@@ -149,26 +149,14 @@ In the `sphere_test.cpp` and `box_test.cpp` tests, add event handlers to allow c
 
 Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/f4e9fbeb7838fff782023dd3d0875d04fe0d52e8>
+* <https://github.com/toksaitov/asr-project/tree/aff15ae15ecbd8afd93e393d0b5200a37b10a1b7>
 
 Note that you need to point to a specific commit to get Version 1.2 of the graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git asr-1.2
 cd asr-1.2
-git checkout f4e9fbeb7838fff782023dd3d0875d04fe0d52e8
-```
-
-After updating the engine, do not forget to run
-
-```
-conan install .. --build missing
-```
-
-and
-
-```
-cmake ..
+git checkout aff15ae15ecbd8afd93e393d0b5200a37b10a1b7
 ```
 
 to download `stb` image loading library and to regenerate the project files.
@@ -183,6 +171,35 @@ Use the 1.2 version of the engine from the previous task and add `transform1_tes
 In the `transform1_test.cpp` test, you should create the scene from the first screenshot. The scene should contain the Sun, Venus, Earth, and Moon represented with textured spheres. You can find the textures in the `data/images` folder. All celestial bodies should rotate around their axis at different speeds. The spheres of Venus and Earth should move around the Sun sphere. The Moon should rotate around the Earth. The speed of rotation should not depend on the speed of rendering.
 
 In the `transform2_test.cpp` test, you should create the clocks from the second screenshot. The clocks should rotate around the `y` axis. The rotation should not depend on the speed of rendering. It would be best to use the smallest number of geometry buffers sent to the GPU. The clocks must show the correct local time of the computer where the program is running.
+
+### Task 7 (Engine Version 1.3)
+
+Ensure that your development environment is set correctly, and you can compile,
+run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/tree/0b5baccccc469f528d94981cbf23de76d08d089f>
+
+Note that you need to point to a specific commit to get Version 1.3 of the
+graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git asr-1.3
+cd asr-1.3
+git checkout 0b5baccccc469f528d94981cbf23de76d08d089f
+```
+
+## Task 8 (Engine Version 1.3)
+
+![Lights](https://i.imgur.com/5PSbN06.png)
+
+Use the 1.3 version of the engine from the previous task and the
+`lighting_test.cpp` file in the tests directory. In the `lighting_test.cpp` test,
+you should create the scene from the first screenshot. The scene should contain
+a plane stretching up to the horizon, a sphere at the center, and (!) two (not one)
+point-lights represented by two additional white spheres orbiting around. There
+are at least three simple approaches to how you can add a second light. The
+challenge of this task is to figure it out on your own. You may have to modify
+the shader in this task. Be prepared for that.
 
 ## Resources
 
