@@ -205,5 +205,5 @@ the shader in this task. Be prepared for that.
 
 3D Math Primer for Graphics and Game Development, Second Edition by Fletcher Done and Ian Parberry
 
-Chapter 3, 4, 5, 6
+Chapter 1, 2, 3, 4, 5, 6
 Chapter 10
