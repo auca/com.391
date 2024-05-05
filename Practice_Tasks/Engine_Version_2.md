@@ -21,11 +21,13 @@ cd asr-2.0
 git checkout b96c19c2b95c2fe83289cac091878b2480eab536
 ```
 
+After updating the engine, remember to recreate the build directory according to the instructions in the engine's Readme file.
+
 If you have trouble building the engine, disable the audio library by removing the line `sdl_mixer/...` from the `conanfile.txt`.
 
 ### Task 10, Course Project (Engine Version 2.0)
 
-![Sprites](https://i.imgur.com/nRWcwWN.png)
+![Doom-like Game](https://i.imgur.com/nRWcwWN.png)
 
 Build one level of an FPS (First-Person Shooter) game by modifying/improving the `general_usage_test.cpp` in a new file `demo_test.cpp`. The project is open, and we encourage you to be creative. Your game should include at least the following features:
 
@@ -35,7 +37,7 @@ Build one level of an FPS (First-Person Shooter) game by modifying/improving the
 * The player should be able to look around using the mouse.
 * The player should be able to shoot enemies using the mouse.
 * The game should continue until the player character is killed by an enemy.
-* The score should be displayed on the screen (figure out how to do it with textures).
+* The score should be displayed on the screen. You will have to figure out how to do this on your own as our engine does not provide text rendering capabilities.
 
 ## Resources
 
