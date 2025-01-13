@@ -29,3 +29,9 @@ Previous Course Recordings
 
 * <https://youtube.com/playlist?list=PLHcEzCb_lW6c-RZGrW0IyEr9IYTNmXwJD>
 * <https://youtube.com/playlist?list=PLHcEzCb_lW6enwcHP8YCp4YHdfLYlJta4>
+
+## Spring 2024
+
+### Lecture and Labs
+
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6eGorhUEPW_e7IdzQVcK105>
