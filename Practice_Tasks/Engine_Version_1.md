@@ -77,3 +77,73 @@ The geometry MUST have the following vertices and triangles for five width and h
 <img src="https://i.imgur.com/GRugyTe.png" width="600" alt="Mesh of a rectangle with five width and five height segments" />
 
 The wireframe in the second screenshot is provided for demonstration purposes only; you do not need to draw it. However, please ensure that your circle and rectangle geometries share the same vertices and triangles. Consult your instructor on how to verify this. Failure to generate an identical mesh topology will result in a score of zero.
+
+### Task 3 (Engine Version 1.1)
+
+Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/tree/6c2c22755fda8d256ab055f67db45cc3bf320dd5>
+
+Note that you must point Git to a specific commit to get Version 1.1 of the graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git asr-1.1
+cd asr-1.1
+git checkout 6c2c22755fda8d256ab055f67db45cc3bf320dd5
+```
+
+### Task 4 (Engine Version 1.1)
+
+<img src="https://i.imgur.com/NLrlhe6.png" width="600" alt="Triangle" />
+
+<img src="https://i.imgur.com/qgrnRVF.png" width="600" alt="Sphere" />
+
+<img src="https://i.imgur.com/ZLteynk.png" width="600" alt="Box" />
+
+Use version 1.1 of the engine from the previous task and add the `triangle_test.cpp`, `sphere_test.cpp`, and `box_test.cpp` files to the tests directory. Update the `CMakeLists.txt` build configuration to include the new tests.
+
+Create the following functions:
+
+```cpp
+asr::GeometryPair generate_triangle_geometry_data(
+    asr::GeometryType geometry_type,
+    float width,
+    float height,
+    unsigned int segments,
+    glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+);
+```
+
+```cpp
+asr::GeometryPair generate_sphere_geometry_data(
+    asr::GeometryType geometry_type,
+    float radius,
+    unsigned int width_segments,
+    unsigned int height_segments,
+    glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+);
+```
+
+```cpp
+asr::GeometryPair generate_box_geometry_data(
+    asr::GeometryType geometry_type,
+    float width,
+    float height,
+    float depth,
+    unsigned int width_segments,
+    unsigned int height_segments,
+    unsigned int depth_segments,
+    glm::vec4 color = glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}
+);
+```
+
+In the `main` function, use these functions appropriately to generate the geometry's vertex and index data, and store them in C++ vectors. Remember to include the `vector` header. Adjust parameters such as radius, width, and the number of height segments to control how many triangles represent the figure. Ensure the triangle vertices are specified in counter-clockwise (CCW) order. Finally, make sure to render both edges and vertices this time.
+
+In the `sphere_test.cpp` and `box_test.cpp` tests, add event handlers for camera control. The `WASD` keys should adjust the camera's orientation (rotate left/right, up/down), and the arrow keys (`UP`, `DOWN`) should move the camera forward in the direction it's facing. Use either the `set_sdl_key_down_event_handler` or `set_sdl_keys_down_event_handler` functions for keyboard event handling with SDL. Consult the SDL documentation for keyboard scan codes.
+
+## Resources
+
+3D Math Primer for Graphics and Game Development, Second Edition by Fletcher Done and Ian Parberry
+
+* Chapter 1, 2, 3, 4, 5, 6
+* Chapter 10
