@@ -82,14 +82,14 @@ The wireframe in the second screenshot is provided for demonstration purposes on
 
 Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
 
-* <https://github.com/toksaitov/asr-project/tree/6c2c22755fda8d256ab055f67db45cc3bf320dd5>
+* <https://github.com/toksaitov/asr-project/tree/df53458f014ee51400018884ad0e8fa3fa8c4538>
 
 Note that you must point Git to a specific commit to get Version 1.1 of the graphics engine.
 
 ```bash
 git clone https://github.com/toksaitov/asr-project.git asr-1.1
 cd asr-1.1
-git checkout 6c2c22755fda8d256ab055f67db45cc3bf320dd5
+git checkout df53458f014ee51400018884ad0e8fa3fa8c4538
 ```
 
 ### Task 4 (Engine Version 1.1)
@@ -140,6 +140,33 @@ asr::GeometryPair generate_box_geometry_data(
 In the `main` function, use these functions appropriately to generate the geometry's vertex and index data, and store them in C++ vectors. Remember to include the `vector` header. Adjust parameters such as radius, width, and the number of height segments to control how many triangles represent the figure. Ensure the triangle vertices are specified in counter-clockwise (CCW) order. Finally, make sure to render both edges and vertices this time.
 
 In the `sphere_test.cpp` and `box_test.cpp` tests, add event handlers for camera control. The `WASD` keys should adjust the camera's orientation (rotate left/right, up/down), and the arrow keys (`UP`, `DOWN`) should move the camera forward in the direction it's facing. Use either the `set_sdl_key_down_event_handler` or `set_sdl_keys_down_event_handler` functions for keyboard event handling with SDL. Consult the SDL documentation for keyboard scan codes.
+
+### Task 5 (Engine Version 1.2)
+
+Ensure that your development environment is set correctly, and you can compile, run, and debug the following version of the engine
+
+* <https://github.com/toksaitov/asr-project/tree/88870724ed491c986f6049f2c1aea961b118c903>
+
+Note that you must point Git to a specific commit to get Version 1.2 of the graphics engine.
+
+```bash
+git clone https://github.com/toksaitov/asr-project.git asr-1.2
+cd asr-1.2
+git checkout 88870724ed491c986f6049f2c1aea961b118c903
+```
+
+### Task 6 (Engine Version 1.2)
+
+![Transform 1](https://i.imgur.com/crijcUt.png)
+![Transofrm 2](https://i.imgur.com/423Lmbm.png)
+
+Use version 1.2 of the engine from the previous task, and add the `transform1_test.cpp` and `transform2_test.cpp` files to the `tests` directory. Update the `CMakeLists.txt` build configuration to include the new tests.
+
+For the `transform1_test.cpp` test, create the scene depicted in the first screenshot. This scene should include textured spheres representing the Sun, Venus, Earth, and Moon, using textures located in the `data/images` folder. Each celestial body should rotate around its axis at a unique speed. Additionally, the spheres for Venus and Earth should orbit the Sun, while the Moon should orbit Earth. Ensure that the rotational speeds remain independent of the rendering speed.
+
+For the `transform2_test.cpp` test, reproduce the clocks shown in the second screenshot. These clocks should rotate around the `y` axis, with their motion independent of the rendering speed. Aim to use the fewest number of geometry buffers possible when sending data to the GPU. The clocks must display the correct local time on the computer where the program is running.
+
+We encourage you to push the boundaries of the provided screenshots by adding your own creative touches to make the programs even more engaging. Consider experimenting with additional objects, visual effects, refined animations, simulations, or enhanced interactivity that complement the core requirements. The best works will be awarded up to two extra points.
 
 ## Resources
 
